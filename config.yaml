@@ -1,0 +1,84 @@
+baseURL: https://examplesite.com
+languageCode: en
+title: Hargo | Hugo Ecommerce Site
+theme: hargo-hugo-ecommerce-theme
+summaryLength: '20'
+paginate: 10
+disqusShortname: ''
+params:
+  author: Themefisher
+  contact:
+    formAction: '#'
+  copyright: '| Copyright &copy; 2019 [Gethugothemes](https://gethugothemes.com) All
+    Rights Reserved |'
+  currencySymbol: $
+  description: This is meta description
+  email: demo@email.com
+  gmapAPI: https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places
+  googleAnalitycsID: ''
+  home: Home
+  location: Dhaka, Bangladedsh
+  logo: images/logo.png
+  mapLatitude: '51.5223477'
+  mapLongitude: '-0.1622023'
+  mapMarker: images/marker.png
+  mobile: 0124857985320
+  plugins:
+    css:
+      - link: plugins/bootstrap/bootstrap.min.css
+      - link: plugins/slick/slick.css
+      - link: plugins/themify-icons/themify-icons.css
+    js:
+      - link: plugins/jQuery/jquery.min.js
+      - link: plugins/bootstrap/bootstrap.min.js
+      - link: plugins/slick/slick.min.js
+      - link: plugins/google-map/gmap.js
+  preloader:
+    enable: yes
+    preloader: ''
+  rating:
+    enable: yes
+    publicKey: 811cf0927332bf51f2e12f84608594ac
+    websiteID: '444334'
+  snipcartApiKey: M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5
+  social:
+    - icon: ti-facebook
+      link: '#'
+    - icon: ti-twitter-alt
+      link: '#'
+    - icon: ti-youtube
+      link: '#'
+    - icon: ti-instagram
+      link: '#'
+    - icon: ti-pinterest
+      link: '#'
+menu:
+  footer:
+    - URL: products
+      name: Products
+      weight: 1
+    - URL: blog
+      name: Blog
+      weight: 2
+    - URL: faq
+      name: FAQ
+      weight: 3
+    - URL: terms-conditions
+      name: Terms & Conditions
+      weight: 4
+    - URL: contact
+      name: Contact
+      weight: 5
+  main:
+    - URL: products
+      name: Products
+      weight: 1
+    - URL: blog
+      name: Blog
+      weight: 2
+    - URL: faq
+      name: FAQ
+      weight: 3
+    - URL: contact
+      name: Contact
+      weight: 4

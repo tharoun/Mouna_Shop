@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>Hello R Markdown</title>
+
+  <!-- Mobile Responsive Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Hugo 0.82.0" />
+
+  <!-- Plugins -->
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/slick/slick.css">
+  
+  <link rel="stylesheet" href="https://examplesite.com/plugins/themify-icons/themify-icons.css">
+  
+
+  
+  <!-- Snipcart -->
+  <link rel="preconnect" href="https://app.snipcart.com/">
+  <link rel="preconnect" href="https://cdn.snipcart.com/">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.css">
+  <script async src="https://cdn.snipcart.com/themes/v3.0.28/default/snipcart.js"></script>
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="https://examplesite.com/scss/style.min.css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://examplesite.com/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="https://examplesite.com/images/favicon.png " type="image/x-icon">
+</head>
+<body>
+<!-- preloader start -->
+<div class="preloader">
+  
+</div>
+<!-- preloader end -->
+<!-- navigation -->
+<header class="sticky-top navigation">
+  <div class="container">
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="https://examplesite.com"><img class="img-fluid" src="https://examplesite.com/images/logo.png" alt="Hargo | Hugo Ecommerce Site"></a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com"> Home </a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/products">Products</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/blog">Blog</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/faq">FAQ</a>
+          </li>
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="https://examplesite.com/contact">Contact</a>
+          </li>
+          
+          
+        </ul>
+      </div>
+      <button class="cart snipcart-summary"><a href="" class="snipcart-checkout text-dark"><i class="ti-shopping-cart"></i><span class="badge badge-primary snipcart-items-count"></span></a></button>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <article>
+          <h2>Hello R Markdown</h2>
+          <ul class="list-inline mb-4">
+            <li class="list-inline-item"><i class="ti-pencil-alt text-primary mr-2"></i> By Frida Gomam</li>
+            <li class="list-inline-item"><i class="ti-calendar text-primary mr-2"></i>
+              01 Dec, 2020</li>
+          </ul>
+          <img src="https://examplesite.com" alt="Hello R Markdown" class="img-fluid w-100 mb-4">
+          <div class="content">
+            
+<script src="https://examplesite.com/blog/2020-12-01-r-rmarkdown/index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code>summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="https://examplesite.com/blog/2020-12-01-r-rmarkdown/index_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
+</p>
+</div>
+</div>
+
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="py-4 bg-gradient position-relative">
+  <img src="https://examplesite.com/images/cta-overlay.png" class="img-fluid overlay-image" alt="">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-7">
+        <h2 class="text-white">Buy one Get One Free Taba Cream</h2>
+        <p class="text-white">Available for limited time only. Grab one while you still can!</p>
+        
+        <a href="https://examplesite.com/products" class="btn btn-light">All Products</a>
+        
+      </div>
+      <div class="col-lg-4 col-md-5 position-relative">
+        <img class="cta-image" src="https://examplesite.com/images/cta.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="section pb-0">
+  <div class="container">
+    <div class="row border-bottom pb-5 justify-content-between">
+      <div class="col-12 text-center section-sm">
+        <a href="https://examplesite.com"><img src="https://examplesite.com/images/logo.png" class="img-fluid"
+            alt="Hargo | Hugo Ecommerce Site"></a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Important Links</h5>
+        <ul class="list-unstyled">
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/products">Products</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/blog">Blog</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/faq">FAQ</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/terms-conditions">Terms &amp; Conditions</a></li>
+          
+          <li class="mb-3"><a class="text-color" href="https://examplesite.com/contact">Contact</a></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <h5 class="font-weight-medium mb-4">Connect With Us</h5>
+        <ul class="list-unstyled mb-5">
+          <li class="mb-3"><a class="text-color" href="tel:1.2485798532e&#43;11"><i
+                class="ti-mobile text-primary mr-2"></i>
+              1.2485798532e&#43;11</a></li>
+          <li class="mb-3"><a class="text-color" href="mailto:demo@email.com"><i
+                class="ti-email text-primary mr-2"></i> demo@email.com</a></li>
+          <li class="mb-3"><i class="ti-location-pin text-primary mr-2"></i> Dhaka, Bangladedsh
+          </li>
+        </ul>
+        
+        <ul class="list-inline">
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-facebook text-primary"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-youtube text-primary"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-instagram text-primary"></i></a></li>
+          
+          <li class="list-inline-item"><a href="#"><i class="ti-pinterest text-primary"></i></a></li>
+          
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-5">
+        <h5 class="font-weight-medium mb-4">Contact us</h5>
+        <form action="#" method="POST">
+          <input type="text" class="form-control mb-2" id="name" name="name" placeholder="Your Name">
+          <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Your Email">
+          <textarea name="message" id="message" class="form-control mb-2" placeholder="Your Message"></textarea>
+          <button type="submit" value="send" class="btn btn-block btn-outline-primary rounded">Send Now</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center py-4">
+        | Copyright © 2019 <a href="https://gethugothemes.com">Gethugothemes</a> All Rights Reserved |
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Snipcart -->
+<div id="snipcart" data-api-key="M2E5YjA3NjMtYzRiYS00YzVjLWEyYWYtNDY5ZDI0OWZhYjg5" hidden></div>
+
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&amp;libraries=places"></script>
+<!-- JS Plugins -->
+
+<script src="https://examplesite.com/plugins/jQuery/jquery.min.js"></script>
+
+<script src="https://examplesite.com/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="https://examplesite.com/plugins/slick/slick.min.js"></script>
+
+<script src="https://examplesite.com/plugins/google-map/gmap.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="https://examplesite.com/js/script.min.js"></script>
+
+
+
+
+<!-- Product Ratings -->
+<script>
+(function (d, t, e, m) {
+  
+  window.RW_Async_Init = function () {
+    RW.init({
+      huid: "444334",
+      uid: "811cf0927332bf51f2e12f84608594ac",
+      source: "website",
+      options: {
+        "size": "medium",
+        "style": "oxygen",
+        "isDummy": false
+      }
+    });
+    RW.render();
+  };
+  
+  var rw, s = d.getElementsByTagName(e)[0],
+    id = "rw-js",
+    l = d.location,
+    ck = "Y" + t.getFullYear() +
+    "M" + t.getMonth() + "D" + t.getDate(),
+    p = l.protocol,
+    f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+    a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+  if (d.getElementById(id)) return;
+  rw = d.createElement(e);
+  rw.id = id;
+  rw.async = true;
+  rw.type = "text/javascript";
+  rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+  s.parentNode.insertBefore(rw, s);
+}(document, new Date(), "script", "rating-widget.com/"));
+</script>
+
+</body>
+</html>
